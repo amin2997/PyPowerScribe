@@ -1,0 +1,13 @@
+{
+    "python.pythonPath": "D:\\ProgramData\\Anaconda3\\python.exe",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true
+}
