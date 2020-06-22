@@ -7,7 +7,7 @@ This is a REST API implementation for Radiology Nuance PowerScribe 360 dictation
 The following will allow you to connect to PowerScribe 360 server and send custom field to the radiologist report.
 
 ```python
-from powerscribe import Powerscribe
+from powerscribe.Powerscribe import Powerscribe
 
 if __name__ == '__main__':
     url = 'http://ps360ServerName/RadPortal'
@@ -22,7 +22,7 @@ if __name__ == '__main__':
         if ps.sign_in(username, password):
             print("Signin successfully")
             if ps.set_custom_field(accession, field_name, field_value):
-                print(f"Sent field name {field_name} and value {field_value} into accession {accession})
+                print(f"Sent field name {field_name} and value {field_value} into accession {accession}")
             else:
                 print(f"Error sending field name {field_name} and value {field_value} into accession {accession}")
         else:
